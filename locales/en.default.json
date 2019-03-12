@@ -380,6 +380,7 @@
     "form": {
       "name": "Your name",
       "email": "Your email",
+      "phone": "Your phone",
       "message": "Your message",
       "submit": "Send message",
       "successfully_sent": "Your message has been successfully sent."
