@@ -262,6 +262,10 @@
             </div>
             <p> This product is only available on custom orders. Please fill out the form below and we will get back to you asap. </p>
 
+            <div style='display:none;'>
+              {%- include 'product-form' -%}
+            </div>
+
             {%- comment -%}
                 --------------------------------------------------------------------------------------------------------------------
                 Starting the form to collect user information about the product
@@ -363,12 +367,6 @@
           {%- if product.description != blank -%}
             <div class="ProductMeta__Description Rte">
                 {{ product.description }}
-            </div>
-          {%- endif -%}
-
-          {%- if section.settings.description_below_add_to_cart -%}
-            <div class="ProductMeta__Description Rte">
-              {{ product.description }}
             </div>
           {%- endif -%}
 
